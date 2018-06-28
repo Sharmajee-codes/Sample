@@ -1,0 +1,111 @@
+{
+    "trigger": {
+      "schedule": {
+        "interval": "4m"
+      }
+    },
+    "input": {
+      "search": {
+        "request": {
+          "search_type": "query_then_fetch",
+          "indices": [
+            "metricbeat"
+          ],
+          "types": [],
+          "body": {
+            "size": 0,
+            "query": {
+              "bool": {
+                "filter": {
+                  "range": {
+                    "@timestamp": {
+                      "gte": "{{ctx.trigger.scheduled_time}}||-2m",
+                      "lte": "{{ctx.trigger.scheduled_time}}",
+                      "format": "strict_date_optional_time||epoch_millis"
+                    }
+                  }
+                }
+              }
+            },
+            "aggs": {
+              "bucketAgg": {
+                "terms": {
+                  "field": "beat.hostname.keyword",
+                  "size": 5,
+                  "order": {
+                    "metricAgg": "asc"
+                  }
+                },
+                "aggs": {
+                  "metricAgg": {
+                    "avg": {
+                      "field": "Hex_service_state"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "condition": {
+      "script": {
+        "source": "ArrayList arr = ctx.payload.aggregations.bucketAgg.buckets; for (int i = 0; i < arr.length; i++) { if (arr[i]['metricAgg'].value < params.threshold) { return true; } } return false;",
+        "lang": "painless",
+        "params": {
+          "threshold": 1
+        }
+      }
+    },
+    "transform": {
+      "script": {
+        "source": "HashMap result = new HashMap(); ArrayList arr = ctx.payload.aggregations.bucketAgg.buckets; ArrayList filteredHits = new ArrayList(); for (int i = 0; i < arr.length; i++) { HashMap filteredHit = new HashMap(); filteredHit.key = arr[i].key; filteredHit.value = arr[i]['metricAgg'].value; if (filteredHit.value < params.threshold) { filteredHits.add(filteredHit); } } result.results = filteredHits; return result;",
+        "lang": "painless",
+        "params": {
+          "threshold": 1
+        }
+      }
+    },
+    "actions": {
+      "http_1": {
+        "webhook": {
+          "scheme": "http",
+          "host": "localhost",
+          "port": 8080,
+          "method": "post",
+          "params": {},
+          "headers": {},
+          "body": "watcher_alerting_logentry-alert-cpu_idle_pct-{{ctx.payload}}-scheduled_time-{{ctx.trigger.scheduled_time}}"
+        }
+      },
+      "logging_1": {
+        "logging": {
+          "level": "info",
+          "text": "Watch [{{ctx.payload}}] is down"
+        }
+      }
+    },
+    "metadata": {
+      "name": "cpu idle pct abv 1",
+      "watcherui": {
+        "trigger_interval_unit": "m",
+        "agg_type": "avg",
+        "time_field": "@timestamp",
+        "trigger_interval_size": 4,
+        "term_size": 5,
+        "time_window_unit": "m",
+        "threshold_comparator": "<",
+        "term_field": "beat.hostname.keyword",
+        "index": [
+          "metricbeat"
+        ],
+        "time_window_size": 2,
+        "threshold": 1,
+        "agg_field": "Hex_service_state"
+      },
+      "xpack": {
+        "type": "threshold"
+      }
+    }
+  }

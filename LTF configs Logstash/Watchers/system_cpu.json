@@ -1,46 +1,45 @@
 {
-    "trigger": {
-      "schedule": {
-        "interval": "2m"
-      }
-    },
-    "input": {
-      "search": {
-        "request": {
-          "search_type": "query_then_fetch",
-          "indices": [
-            "metricbeat-6.0.0-*"
-          ],
-          "types": [],
-          "body": {
-            "size": 0,
-            "query": {
-              "bool": {
-                "filter": {
-                  "range": {
-                    "@timestamp": {
-                      "gte": "{{ctx.trigger.scheduled_time}}||-6m",
-                      "lte": "{{ctx.trigger.scheduled_time}}",
-                      "format": "strict_date_optional_time||epoch_millis"
-                    }
+  "trigger": {
+    "schedule": {
+      "interval": "2m"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "search_type": "query_then_fetch",
+        "indices": [
+          "metricbeat"
+        ],
+        "types": [],
+        "body": {
+          "size": 0,
+          "query": {
+            "bool": {
+              "filter": {
+                "range": {
+                  "@timestamp": {
+                    "gte": "{{ctx.trigger.scheduled_time}}||-6m",
+                    "lte": "{{ctx.trigger.scheduled_time}}",
+                    "format": "strict_date_optional_time||epoch_millis"
                   }
                 }
               }
-            },
-            "aggs": {
-              "bucketAgg": {
-                "terms": {
-                  "field": "beat.hostname",
-                  "size": 1000,
-                  "order": {
-                    "metricAgg": "desc"
-                  }
-                },
-                "aggs": {
-                  "metricAgg": {
-                    "avg": {
-                      "field": "Hex_CPUNorm"
-                    }
+            }
+          },
+          "aggs": {
+            "bucketAgg": {
+              "terms": {
+                "field": "beat.hostname",
+                "size": 1000,
+                "order": {
+                  "metricAgg": "desc"
+                }
+              },
+              "aggs": {
+                "metricAgg": {
+                  "avg": {
+                    "field": "Hex_CPUNorm"
                   }
                 }
               }
@@ -48,42 +47,37 @@
           }
         }
       }
-    },
-    "condition": {
-      "script": {
-        "source": "ArrayList arr = ctx.payload.aggregations.bucketAgg.buckets; for (int i = 0; i < arr.length; i++) { if (arr[i]['metricAgg'].value > params.threshold) { return true; } } return false;",
-        "lang": "painless",
-        "params": {
-          "threshold": 0.9
-        }
+    }
+  },
+  "condition": {
+    "script": {
+      "source": "ArrayList arr = ctx.payload.aggregations.bucketAgg.buckets; for (int i = 0; i < arr.length; i++) { if (arr[i]['metricAgg'].value > params.threshold) { return true; } } return false;",
+      "lang": "painless",
+      "params": {
+        "threshold": 0.9
       }
-    },
-    "transform": {
-      "script": {
-        "source": "HashMap result = new HashMap(); ArrayList arr = ctx.payload.aggregations.bucketAgg.buckets; ArrayList filteredHits = new ArrayList(); for (int i = 0; i < arr.length; i++) { HashMap filteredHit = new HashMap(); filteredHit.key = arr[i].key; filteredHit.value = arr[i]['metricAgg'].value; if (filteredHit.value > params.threshold) { filteredHits.add(filteredHit); } } result.results = filteredHits; return result;",
-        "lang": "painless",
-        "params": {
-          "threshold": 0.9
-        }
+    }
+  },
+  "actions": {
+    "http_1": {
+      "webhook": {
+        "scheme": "http",
+        "host": "localhost",
+        "port": 8080,
+        "method": "post",
+        "params": {},
+        "headers": {},
+        "body": "watcher_alerting_logentry-alert-cpu-{{ctx.payload}}"
       }
-    },
-    "actions": {
-      "http_1": {
-        "webhook": {
-          "scheme": "http",
-          "host": "mnprdlog01",
-          "port": 8080,
-          "method": "post",
-          "params": {},
-          "headers": {},
-          "body": "watcher_alerting_logentry-alert-cpu-{{ctx.payload}}"
-        }
-      }
-    },
-    "metadata": {
-      "name": "system_cpu",
-      "xpack": {
-        "type": "json"
+    }
+  },
+  "transform": {
+    "script": {
+      "source": "HashMap result = new HashMap(); ArrayList arr = ctx.payload.aggregations.bucketAgg.buckets; ArrayList filteredHits = new ArrayList(); for (int i = 0; i < arr.length; i++) { HashMap filteredHit = new HashMap(); filteredHit.key = arr[i].key; filteredHit.value = arr[i]['metricAgg'].value; if (filteredHit.value > params.threshold) { filteredHits.add(filteredHit); } } result.results = filteredHits; return result;",
+      "lang": "painless",
+      "params": {
+        "threshold": 0.9
       }
     }
   }
+}

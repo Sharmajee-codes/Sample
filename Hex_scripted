@@ -1,0 +1,3 @@
+if (doc['metricset.name'].value == 'fsstat') {
+    return (float)doc['system.fsstat.total_size.used'].value/(float)doc['system.fsstat.total_size.total'].value
+}

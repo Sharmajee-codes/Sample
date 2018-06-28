@@ -1,0 +1,813 @@
+[
+  {
+    "_id": "69fcd0a0-092b-11e8-9d63-8f4d42bda979",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Raw Logs",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":12,\"size_y\":8,\"panelIndex\":1,\"type\":\"search\",\"id\":\"d96bd7c0-092a-11e8-9d63-8f4d42bda979\",\"col\":1,\"row\":2,\"columns\":[\"_source\"],\"sort\":[\"@timestamp\",\"desc\"]},{\"size_x\":12,\"size_y\":1,\"panelIndex\":2,\"type\":\"visualization\",\"id\":\"8eb253c0-0908-11e8-9d63-8f4d42bda979\",\"col\":1,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "3aab26f0-0893-11e8-9d63-8f4d42bda979",
+    "_type": "dashboard",
+    "_source": {
+      "title": "System Overview",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"80b40f40-0875-11e8-9d63-8f4d42bda979\",\"panelIndex\":1,\"row\":2,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":3,\"id\":\"c91088e0-0875-11e8-9d63-8f4d42bda979\",\"panelIndex\":2,\"row\":2,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"c56d4ba0-088f-11e8-9d63-8f4d42bda979\",\"panelIndex\":3,\"row\":2,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"462e5890-0892-11e8-9d63-8f4d42bda979\",\"panelIndex\":4,\"row\":2,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"dfbb4350-088e-11e8-9d63-8f4d42bda979\",\"panelIndex\":7,\"row\":2,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"76544c00-0897-11e8-9d63-8f4d42bda979\",\"panelIndex\":8,\"row\":2,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"d43c1610-089f-11e8-9d63-8f4d42bda979\",\"panelIndex\":9,\"row\":8,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"f9976bc0-08a0-11e8-9d63-8f4d42bda979\",\"panelIndex\":10,\"row\":8,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"8eb253c0-0908-11e8-9d63-8f4d42bda979\",\"panelIndex\":11,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":3,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"179706b0-0b46-11e8-8059-e7116753fd3f\",\"col\":1,\"row\":5},{\"size_x\":6,\"size_y\":3,\"panelIndex\":13,\"type\":\"visualization\",\"id\":\"97d69980-0b46-11e8-8059-e7116753fd3f\",\"col\":7,\"row\":5},{\"size_x\":6,\"size_y\":3,\"panelIndex\":14,\"type\":\"visualization\",\"id\":\"6025c1b0-0cf8-11e8-9b5f-eb6e83ed52c3\",\"col\":1,\"row\":11}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"}}},\"P-2\":{\"vis\":{\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"}}},\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"}}},\"P-4\":{\"vis\":{\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"}}},\"P-8\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e278d220-088d-11e8-9d63-8f4d42bda979",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Enterprise Overview",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"3d3f4580-0876-11e8-9d63-8f4d42bda979\",\"panelIndex\":1,\"row\":2,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":3,\"id\":\"80b40f40-0875-11e8-9d63-8f4d42bda979\",\"panelIndex\":2,\"row\":2,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"c91088e0-0875-11e8-9d63-8f4d42bda979\",\"panelIndex\":3,\"row\":2,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"8eb253c0-0908-11e8-9d63-8f4d42bda979\",\"panelIndex\":6,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":7,\"id\":\"d43c1610-089f-11e8-9d63-8f4d42bda979\",\"panelIndex\":7,\"row\":2,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"78ac4490-0aee-11e8-8059-e7116753fd3f\",\"panelIndex\":8,\"row\":5,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"col\":7,\"id\":\"0e360ee0-0af1-11e8-8059-e7116753fd3f\",\"panelIndex\":9,\"row\":5,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":6,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"ad3343f0-0bbe-11e8-9b5f-eb6e83ed52c3\",\"col\":1,\"row\":10}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-2\":{\"vis\":{\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"}}},\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"}}},\"P-8\":{\"vis\":{\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "21cfc250-2d44-11e8-8402-6b4e42564704",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Wifi AccessPoint Status",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":12,\"size_y\":8,\"panelIndex\":1,\"type\":\"search\",\"id\":\"ff4c0130-2d43-11e8-8402-6b4e42564704\",\"col\":1,\"row\":2,\"columns\":[\"name\",\"model\",\"location\",\"controllerName\",\"serialNumber\",\"softwareVersion\",\"clientCount\",\"status\"],\"sort\":[\"@timestamp\",\"desc\"]},{\"size_x\":12,\"size_y\":1,\"panelIndex\":2,\"type\":\"visualization\",\"id\":\"8eb253c0-0908-11e8-9d63-8f4d42bda979\",\"col\":1,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "03e8a9e0-51da-11e8-bd4e-0dcd22eefe4f",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Server_Availability",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":8,\"size_y\":1,\"panelIndex\":1,\"type\":\"visualization\",\"id\":\"8eb253c0-0908-11e8-9d63-8f4d42bda979\",\"col\":1,\"row\":1},{\"size_x\":8,\"size_y\":10,\"panelIndex\":2,\"type\":\"visualization\",\"id\":\"58e71450-4fa4-11e8-bd4e-0dcd22eefe4f\",\"col\":1,\"row\":2}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-15m",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "30cff000-0944-11e8-9b5f-eb6e83ed52c3",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Alert list",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":12,\"size_y\":8,\"panelIndex\":1,\"type\":\"search\",\"id\":\"e7812720-0943-11e8-9b5f-eb6e83ed52c3\",\"col\":1,\"row\":2,\"columns\":[\"Hex_SourceHost\",\"Hex_AlertText\",\"alert_type\",\"Hex_SourceTool\"],\"sort\":[\"@timestamp\",\"desc\"]},{\"size_x\":12,\"size_y\":1,\"panelIndex\":2,\"type\":\"visualization\",\"id\":\"8eb253c0-0908-11e8-9d63-8f4d42bda979\",\"col\":1,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e4789c70-2239-11e8-b95d-052425c74fb9",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Printer Status",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"a3d00780-2239-11e8-b95d-052425c74fb9\",\"panelIndex\":1,\"row\":2,\"size_x\":2,\"size_y\":7,\"type\":\"visualization\"},{\"col\":1,\"id\":\"8eb253c0-0908-11e8-9d63-8f4d42bda979\",\"panelIndex\":3,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":3,\"id\":\"b18b0800-2cbd-11e8-8402-6b4e42564704\",\"panelIndex\":4,\"row\":2,\"size_x\":2,\"size_y\":7,\"type\":\"visualization\"},{\"col\":5,\"id\":\"4bfe1030-2cbe-11e8-8402-6b4e42564704\",\"panelIndex\":5,\"row\":2,\"size_x\":2,\"size_y\":7,\"type\":\"visualization\"},{\"col\":7,\"id\":\"8dff0930-2cbe-11e8-8402-6b4e42564704\",\"panelIndex\":6,\"row\":2,\"size_x\":2,\"size_y\":7,\"type\":\"visualization\"},{\"col\":9,\"id\":\"b9076c80-2cbe-11e8-8402-6b4e42564704\",\"panelIndex\":7,\"row\":2,\"size_x\":3,\"size_y\":7,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9556a6d0-6c69-11e8-9b67-e3c2b16c11e8",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Agilysis",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":4,\"size_y\":3,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"5aa46810-6c69-11e8-9b67-e3c2b16c11e8\",\"col\":1,\"row\":1},{\"size_x\":4,\"size_y\":7,\"panelIndex\":5,\"type\":\"visualization\",\"id\":\"7305dc90-6c69-11e8-9b67-e3c2b16c11e8\",\"col\":1,\"row\":4},{\"size_x\":6,\"size_y\":3,\"panelIndex\":6,\"type\":\"visualization\",\"id\":\"28f99aa0-6c6a-11e8-9b67-e3c2b16c11e8\",\"col\":5,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c1fb0d00-682e-11e8-8c0a-c13124fcada9",
+    "_type": "dashboard",
+    "_source": {
+      "title": "LT Connect",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"fcd32dd0-682f-11e8-8c0a-c13124fcada9\",\"panelIndex\":2,\"row\":1,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"ff9a6ff0-6c68-11e8-9b67-e3c2b16c11e8\",\"panelIndex\":3,\"row\":4,\"size_x\":4,\"size_y\":6,\"type\":\"visualization\"},{\"col\":5,\"id\":\"28f99aa0-6c6a-11e8-9b67-e3c2b16c11e8\",\"panelIndex\":4,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":6,\"panelIndex\":5,\"type\":\"visualization\",\"id\":\"4e262a20-7a4b-11e8-9808-ff937727ce07\",\"col\":5,\"row\":4}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-3\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-5\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d96bd7c0-092a-11e8-9d63-8f4d42bda979",
+    "_type": "search",
+    "_source": {
+      "title": "raw_logs",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ff4c0130-2d43-11e8-8402-6b4e42564704",
+    "_type": "search",
+    "_source": {
+      "title": "Wifi AccessPoint Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "name",
+        "model",
+        "location",
+        "controllerName",
+        "serialNumber",
+        "softwareVersion",
+        "clientCount",
+        "status"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"26b97ff0-2d43-11e8-8402-6b4e42564704\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e7812720-0943-11e8-9b5f-eb6e83ed52c3",
+    "_type": "search",
+    "_source": {
+      "title": "Alerts",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "Hex_SourceHost",
+        "Hex_AlertText",
+        "alert_type",
+        "Hex_SourceTool",
+        "Hex_TicketNumber"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fe753e40-096a-11e8-8059-e7116753fd3f\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "dfbb4350-088e-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_disk_usage",
+      "visState": "{\"title\":\"sys_view_disk_usage\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"top_n\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"#68BC00\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"avg\",\"field\":\"system.filesystem.used.pct\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"percent\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Disk Usage\",\"terms_field\":\"system.filesystem.mount_point\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"metricbeat-6.0.0-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"bar_color_rules\":[{\"value\":0.7,\"id\":\"91985d20-088e-11e8-b830-75533bebd788\",\"bar_color\":\"rgba(252,220,0,1)\",\"opperator\":\"gt\"},{\"value\":0.9,\"id\":\"d8038e10-088e-11e8-b830-75533bebd788\",\"bar_color\":\"rgba(244,78,59,1)\",\"opperator\":\"gt\"}],\"drilldown_url\":\"\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "3d3f4580-0876-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_total_hosts",
+      "visState": "{\"title\":\"sys_view_total_hosts\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"gauge\",\"gauge\":{\"verticalSplit\":false,\"autoExtend\":false,\"percentageMode\":false,\"gaugeType\":\"Metric\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"None\",\"useRange\":false,\"colorsRange\":[{\"from\":0,\"to\":100}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":false,\"labels\":false,\"color\":\"#333\",\"width\":2},\"type\":\"simple\",\"style\":{\"fontSize\":60,\"bgColor\":false,\"labelColor\":false,\"subText\":\"\"}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"beat.hostname\",\"customLabel\":\"Total hosts\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "76544c00-0897-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_process_running",
+      "visState": "{\"title\":\"sys_view_process_running\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"gauge\",\"gauge\":{\"verticalSplit\":false,\"autoExtend\":false,\"percentageMode\":false,\"gaugeType\":\"Metric\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"None\",\"useRange\":false,\"colorsRange\":[{\"from\":0,\"to\":100}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":false,\"labels\":false,\"color\":\"#333\",\"width\":2},\"type\":\"simple\",\"style\":{\"fontSize\":60,\"bgColor\":false,\"labelColor\":false,\"subText\":\"\"}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"system.process.summary.total\",\"aggregate\":\"max\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Running Processes\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[{\"meta\":{\"index\":\"8dabb790-06f7-11e8-9d63-8f4d42bda979\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"metricset.name\",\"value\":\"process_summary\",\"params\":{\"query\":\"process_summary\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"metricset.name\":{\"query\":\"process_summary\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "462e5890-0892-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_disk_gauge",
+      "visState": "{\"title\":\"sys_view_disk_gauge\",\"type\":\"gauge\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"gauge\":{\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":0.7},{\"from\":0.7,\"to\":0.9},{\"from\":0.9,\"to\":1}],\"extendRange\":true,\"gaugeColorMode\":\"Labels\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Arc\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":true,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":true},\"style\":{\"bgColor\":false,\"bgFill\":\"#eee\",\"bgMask\":false,\"bgWidth\":0.9,\"fontSize\":60,\"labelColor\":true,\"mask\":false,\"maskBars\":50,\"subText\":\"\",\"width\":0.9},\"type\":\"meter\",\"verticalSplit\":false},\"type\":\"gauge\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_DiskUsedPct\",\"aggregate\":\"max\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Disk Usage %\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"50 - 75\":\"#EAB839\",\"70 - 90\":\"#E0752D\"},\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"8dabb790-06f7-11e8-9d63-8f4d42bda979\",\"key\":\"metricset.name\",\"negate\":false,\"params\":{\"query\":\"fsstat\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"fsstat\"},\"query\":{\"match\":{\"metricset.name\":{\"query\":\"fsstat\",\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d43c1610-089f-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_cpu_memory_trend",
+      "visState": "{\"title\":\"sys_view_cpu_memory_trend\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Utilization\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"CPU Utilization\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":false},{\"show\":true,\"mode\":\"normal\",\"type\":\"line\",\"drawLinesBetweenPoints\":true,\"showCircles\":false,\"data\":{\"id\":\"3\",\"label\":\"Memory Utilization\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_CPUNorm\",\"customLabel\":\"CPU Utilization\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"system.memory.used.pct\",\"customLabel\":\"Memory Utilization\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f9976bc0-08a0-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_filesystem_trend",
+      "visState": "{\"title\":\"sys_view_filesystem_trend\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Utilization\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Average system.filesystem.used.pct\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":false}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"system.filesystem.used.pct\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Filesystem Utilization\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"system.filesystem.mount_point\",\"size\":10,\"order\":\"asc\",\"orderBy\":\"_term\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c56d4ba0-088f-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_swap_gauge",
+      "visState": "{\"title\":\"sys_view_swap_gauge\",\"type\":\"gauge\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"gauge\":{\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":0.7},{\"from\":0.7,\"to\":0.9},{\"from\":0.9,\"to\":1}],\"extendRange\":true,\"gaugeColorMode\":\"Labels\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Arc\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":true,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":true},\"style\":{\"bgColor\":false,\"bgFill\":\"#eee\",\"bgMask\":false,\"bgWidth\":0.9,\"fontSize\":60,\"labelColor\":true,\"mask\":false,\"maskBars\":50,\"subText\":\"\",\"width\":0.9},\"type\":\"meter\",\"verticalSplit\":false},\"type\":\"gauge\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"system.memory.swap.used.pct\",\"aggregate\":\"max\",\"size\":1,\"sortField\":\"@timestamp\",\"sortOrder\":\"desc\",\"customLabel\":\"Swap %\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"},\"colors\":{\"70 - 90\":\"#E0752D\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[{\"meta\":{\"index\":\"8dabb790-06f7-11e8-9d63-8f4d42bda979\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"metricset.name\",\"value\":\"memory\",\"params\":{\"query\":\"memory\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"metricset.name\":{\"query\":\"memory\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c91088e0-0875-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_memory_gauge",
+      "visState": "{\"title\":\"sys_view_memory_gauge\",\"type\":\"gauge\",\"params\":{\"type\":\"gauge\",\"addTooltip\":true,\"addLegend\":false,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":true,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":0,\"to\":0.7},{\"from\":0.7,\"to\":0.9},{\"from\":0.9,\"to\":1}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":true,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"\",\"fontSize\":60,\"labelColor\":true}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"system.memory.used.pct\",\"customLabel\":\"Memory Usage\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"},\"colors\":{\"70 - 90\":\"#E0752D\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "80b40f40-0875-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_cpu_gauge",
+      "visState": "{\"title\":\"sys_view_cpu_gauge\",\"type\":\"gauge\",\"params\":{\"type\":\"gauge\",\"addTooltip\":true,\"addLegend\":false,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":true,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":0,\"to\":0.7},{\"from\":0.7,\"to\":0.9},{\"from\":0.9,\"to\":1}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":true,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"\",\"fontSize\":60,\"labelColor\":true}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_CPUNorm\",\"customLabel\":\"CPU Usage\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 70\":\"rgb(0,104,55)\",\"70 - 90\":\"rgb(255,255,190)\",\"90 - 100\":\"rgb(165,0,38)\"},\"colors\":{\"70 - 90\":\"#E0752D\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "78ac4490-0aee-11e8-8059-e7116753fd3f",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_top_host_cpu",
+      "visState": "{\"title\":\"sys_view_top_host_cpu\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"CPU Usage (Range 0 to 1)\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"CPU Usage (Range 0 to 1)\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_CPUNorm\",\"customLabel\":\"CPU Usage (Range 0 to 1)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"beat.hostname\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"CPU Utilization\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Average Hex_CPUNorm\":\"#052B51\",\"CPU Usage (Range 0 to 1)\":\"#052B51\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "2b2c4a90-087c-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_top_host_cpu_bkp",
+      "visState": "{\"title\":\"sys_view_top_host_cpu_bkp\",\"type\":\"metrics\",\"params\":{\"axis_formatter\":\"number\",\"axis_position\":\"left\",\"bar_color_rules\":[{\"value\":0.5,\"id\":\"a7c359b0-087a-11e8-b844-953a46a54422\",\"opperator\":\"gt\",\"bar_color\":\"rgba(252,220,0,1)\"},{\"value\":0.75,\"id\":\"073f8390-087c-11e8-ac6c-bd7cadd7185f\",\"opperator\":\"gt\",\"bar_color\":\"rgba(244,78,59,1)\"}],\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"index_pattern\":\"metricbeat-6.0.0-*\",\"interval\":\"auto\",\"series\":[{\"axis_position\":\"right\",\"chart_type\":\"line\",\"color\":\"#68BC00\",\"fill\":0.5,\"formatter\":\"percent\",\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"label\":\"CPU Usage\",\"line_width\":1,\"metrics\":[{\"field\":\"Hex_CPUNorm\",\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"avg\"}],\"point_size\":1,\"seperate_axis\":0,\"split_mode\":\"terms\",\"stacked\":\"none\",\"terms_field\":\"beat.hostname\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"terms_size\":\"20\"}],\"show_grid\":1,\"show_legend\":1,\"time_field\":\"@timestamp\",\"type\":\"top_n\",\"drilldown_url\":\"../app/kibana#/dashboard/3aab26f0-0893-11e8-9d63-8f4d42bda979?_a=(query:(query_string:(analyze_wildcard:!t,query:'beat.name:\\\"{{key}}\\\"')))\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9fd651b0-087c-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_top_host_memory_bkp",
+      "visState": "{\"title\":\"sys_view_top_host_memory_bkp\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"top_n\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"#68BC00\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"avg\",\"field\":\"system.memory.used.pct\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"percent\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Memory Usage\",\"terms_field\":\"beat.hostname\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"terms_size\":\"20\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"metricbeat-6.0.0-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"bar_color_rules\":[{\"value\":0.8,\"id\":\"49f74970-087c-11e8-ac6c-bd7cadd7185f\",\"bar_color\":\"rgba(252,220,0,1)\",\"opperator\":\"gt\"},{\"value\":0.9,\"id\":\"92d29000-087c-11e8-ac6c-bd7cadd7185f\",\"bar_color\":\"rgba(244,78,59,1)\",\"opperator\":\"gt\"}],\"drilldown_url\":\"../app/kibana#/dashboard/3aab26f0-0893-11e8-9d63-8f4d42bda979?_a=(query:(query_string:(analyze_wildcard:!t,query:'beat.name:\\\"{{key}}\\\"')))\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ad3343f0-0bbe-11e8-9b5f-eb6e83ed52c3",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_top_filesystem",
+      "visState": "{\"title\":\"sys_view_top_filesystem\",\"type\":\"horizontal_bar\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":200},\"position\":\"left\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Filesystem Utilization\"},\"drawLinesBetweenPoints\":true,\"mode\":\"normal\",\"show\":true,\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":true,\"rotate\":75,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"bottom\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Filesystem Utilization\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"system.filesystem.used.pct\",\"customLabel\":\"Filesystem Utilization\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Hex_Hostname_filesystem\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Filesystem Usage\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Average system.filesystem.used.pct\":\"#0A50A1\",\"Filesystem Utilization\":\"#0A50A1\"},\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"8dabb790-06f7-11e8-9d63-8f4d42bda979\",\"key\":\"metricset.name\",\"negate\":false,\"params\":{\"query\":\"filesystem\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"filesystem\"},\"query\":{\"match\":{\"metricset.name\":{\"query\":\"filesystem\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"8dabb790-06f7-11e8-9d63-8f4d42bda979\",\"negate\":true,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"system.filesystem.type\",\"value\":\"cdrom\",\"params\":{\"query\":\"cdrom\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"system.filesystem.type\":{\"query\":\"cdrom\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "0e360ee0-0af1-11e8-8059-e7116753fd3f",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_top_host_memory",
+      "visState": "{\"title\":\"sys_view_top_host_memory\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Memory Usage (Range 0 to 1)\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Memory Usage (Range 0 to 1)\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"system.memory.used.pct\",\"customLabel\":\"Memory Usage (Range 0 to 1)\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"beat.hostname\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Memory Utilization\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Memory Usage\":\"#052B51\",\"Memory Usage (Range 0 to 1)\":\"#65C5DB\"},\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "97d69980-0b46-11e8-8059-e7116753fd3f",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_process_memory_rss",
+      "visState": "{\"title\":\"sys_view_process_memory_rss\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Process Memory RSS Usage\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Process Memory RSS Usage\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"system.process.memory.rss.pct\",\"customLabel\":\"Process Memory RSS Usage\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"system.process.name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Process Memory RSS Utilization\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Process Memory Usage\":\"#65C5DB\",\"Process Memory RSS Usage\":\"#65C5DB\"},\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "179706b0-0b46-11e8-8059-e7116753fd3f",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_process_cpu",
+      "visState": "{\"title\":\"sys_view_process_cpu\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Process CPU Usage\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Process CPU Usage\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"system.process.cpu.total.norm.pct\",\"customLabel\":\"Process CPU Usage\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"system.process.name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Process CPU Utilization\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false,\"colors\":{\"Process CPU Usage\":\"#052B51\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"a3680740-0969-11e8-8059-e7116753fd3f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "fa87f930-0893-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_process_memory_bkp",
+      "visState": "{\"title\":\"sys_view_process_memory_bkp\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"top_n\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"#68BC00\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"avg\",\"field\":\"system.process.memory.rss.pct\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"percent\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Process CPU Usage\",\"terms_field\":\"system.process.name\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"metricbeat-6.0.0-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"bar_color_rules\":[{\"value\":0.6,\"id\":\"b35113d0-0893-11e8-b792-8512632b21e8\",\"bar_color\":\"rgba(252,220,0,1)\",\"opperator\":\"gt\"},{\"value\":0.8,\"id\":\"f7c0e9f0-0893-11e8-b792-8512632b21e8\",\"bar_color\":\"rgba(244,78,59,1)\",\"opperator\":\"gt\"}],\"drilldown_url\":\"\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "85c03b70-0894-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_process_cpu_bkp",
+      "visState": "{\"title\":\"sys_view_process_cpu_bkp\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"top_n\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"#68BC00\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"avg\",\"field\":\"system.process.cpu.total.norm.pct\"}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"percent\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":1,\"fill\":0.5,\"stacked\":\"none\",\"label\":\"Process CPU Usage\",\"terms_field\":\"system.process.name\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"metricbeat-6.0.0-*\",\"interval\":\"auto\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"bar_color_rules\":[{\"value\":0.6,\"id\":\"b35113d0-0893-11e8-b792-8512632b21e8\",\"bar_color\":\"rgba(252,220,0,1)\",\"opperator\":\"gt\"},{\"value\":0.8,\"id\":\"f7c0e9f0-0893-11e8-b792-8512632b21e8\",\"bar_color\":\"rgba(244,78,59,1)\",\"opperator\":\"gt\"}],\"drilldown_url\":\"\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "6025c1b0-0cf8-11e8-9b5f-eb6e83ed52c3",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_network_trend",
+      "visState": "{\"title\":\"sys_view_network_trend\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=metricbeat*, timefield=@timestamp, metric=max:system.network.in.bytes, split=system.network.name:1).derivative().if(lt, 0, 0).divide(1048576).lines(fill=2, width=1).color(green).label(\\\"Inbound traffic\\\").title(\\\"Network traffic (MB/s)\\\"), .es(index=metricbeat*, timefield=@timestamp, metric=max:system.network.out.bytes, split=system.network.name:1).derivative().multiply(-1).if(gt, 0, 0).divide(1048576).lines(fill=2, width=1).color(blue).label(\\\"Outbound traffic\\\").legend(columns=2, position=nw)\",\"interval\":\"5m\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8eb253c0-0908-11e8-9d63-8f4d42bda979",
+    "_type": "visualization",
+    "_source": {
+      "title": "sys_view_tabs",
+      "visState": "{\"title\":\"sys_view_tabs\",\"type\":\"markdown\",\"params\":{\"fontSize\":12,\"markdown\":\"[Enterprise Overview](#/dashboard/e278d220-088d-11e8-9d63-8f4d42bda979)  | [System Overview](#/dashboard/3aab26f0-0893-11e8-9d63-8f4d42bda979) | [Alert List](#/dashboard/30cff000-0944-11e8-9b5f-eb6e83ed52c3) | [Raw Logs](#/dashboard/69fcd0a0-092b-11e8-9d63-8f4d42bda979) | [Printer Status](#/dashboard/e4789c70-2239-11e8-b95d-052425c74fb9) | [Wifi AccessPoint Status](#/dashboard/21cfc250-2d44-11e8-8402-6b4e42564704) | [Server Availability](#/dashboard/03e8a9e0-51da-11e8-bd4e-0dcd22eefe4f?_g=())\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "58e71450-4fa4-11e8-bd4e-0dcd22eefe4f",
+    "_type": "visualization",
+    "_source": {
+      "title": "Server-Availability",
+      "visState": "{\"title\":\"Server-Availability\",\"type\":\"table\",\"params\":{\"perPage\":100,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_Availability\",\"customLabel\":\"Server Availability\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"monitor.host\",\"size\":1000,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Host Name\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"type\":\"phrases\",\"key\":\"monitor.name\",\"value\":\"Server\",\"params\":[\"Server\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"monitor.name\":\"Server\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4bfe1030-2cbe-11e8-8402-6b4e42564704",
+    "_type": "visualization",
+    "_source": {
+      "title": "Printer Availability XXXXCOFF",
+      "visState": "{\"title\":\"Printer Availability XXXXCOFF\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"count\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_Availability\",\"customLabel\":\"Availability\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"monitor.ip\",\"size\":152,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"XXXXCOFF Printers\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"key\":\"monitor.name\",\"negate\":false,\"params\":{\"query\":\"XXXXCOFF Printers\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"XXXXCOFF Printers\"},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"XXXXCOFF Printers\",\"type\":\"phrase\"}}}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8dff0930-2cbe-11e8-8402-6b4e42564704",
+    "_type": "visualization",
+    "_source": {
+      "title": "Printer Availability XXXXBIS1",
+      "visState": "{\"title\":\"Printer Availability XXXXBIS1\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"count\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_Availability\",\"customLabel\":\"Availability\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"monitor.ip\",\"size\":152,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"XXXXBIS1 Printers\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"XXXXBIS1 Printers\",\"params\":{\"query\":\"XXXXBIS1 Printers\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"XXXXBIS1 Printers\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b18b0800-2cbd-11e8-8402-6b4e42564704",
+    "_type": "visualization",
+    "_source": {
+      "title": "Printer Availability XXXXSMTH",
+      "visState": "{\"title\":\"Printer Availability XXXXSMTH\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"count\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_Availability\",\"customLabel\":\"Availability\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"monitor.ip\",\"size\":152,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"XXXXSMTH Printers\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"XXXXSMTH Printers\",\"params\":{\"query\":\"XXXXSMTH Printers\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"XXXXSMTH Printers\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b9076c80-2cbe-11e8-8402-6b4e42564704",
+    "_type": "visualization",
+    "_source": {
+      "title": "Printer Availability XXXXBIS2",
+      "visState": "{\"title\":\"Printer Availability XXXXBIS2\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"count\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_Availability\",\"customLabel\":\"Availability\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"monitor.ip\",\"size\":152,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"XXXXBIS2\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"XXXXBIS2 Printers\",\"params\":{\"query\":\"XXXXBIS2 Printers\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"XXXXBIS2 Printers\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "a3d00780-2239-11e8-b95d-052425c74fb9",
+    "_type": "visualization",
+    "_source": {
+      "title": "Printer Availability XXXXSAND",
+      "visState": "{\"title\":\"Printer Availability XXXXSAND\",\"type\":\"table\",\"params\":{\"perPage\":15,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"count\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_Availability\",\"customLabel\":\"Availability\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"monitor.ip\",\"size\":200,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"XXXXSAND Printers\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"XXXXSAND Printers\",\"params\":{\"query\":\"XXXXSAND Printers\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"XXXXSAND Printers\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "28f99aa0-6c6a-11e8-9b67-e3c2b16c11e8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Availability Line chart LTConnect Servers",
+      "visState": "{\"title\":\"Availability Line chart LTConnect Servers\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Availability\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Availability\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_Availability\",\"customLabel\":\"Availability\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Time\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"LTConnect Servers\",\"params\":{\"query\":\"LTConnect Servers\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"LTConnect Servers\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ff9a6ff0-6c68-11e8-9b67-e3c2b16c11e8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Server-Availability-LT Connect",
+      "visState": "{\"title\":\"Server-Availability-LT Connect\",\"type\":\"table\",\"params\":{\"perPage\":100,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_Availability\",\"customLabel\":\"Server Availability\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"monitor.host\",\"size\":1000,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Host Name\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"LTConnect Servers\",\"params\":{\"query\":\"LTConnect Servers\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"LTConnect Servers\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "4e262a20-7a4b-11e8-9808-ff937727ce07",
+    "_type": "visualization",
+    "_source": {
+      "title": "LTConnect Locations",
+      "visState": "{\"title\":\"LTConnect Locations\",\"type\":\"table\",\"params\":{\"perPage\":20,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":true,\"totalFunc\":\"count\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"monitor.host\",\"customLabel\":\"Count of devices\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"Hex_Location\",\"size\":1000,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Locations\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"LTConnect Servers\",\"params\":{\"query\":\"LTConnect Servers\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"LTConnect Servers\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7305dc90-6c69-11e8-9b67-e3c2b16c11e8",
+    "_type": "visualization",
+    "_source": {
+      "title": "Server-Availability-Agilysis",
+      "visState": "{\"title\":\"Server-Availability-Agilysis\",\"type\":\"table\",\"params\":{\"perPage\":100,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"Hex_Availability\",\"customLabel\":\"Server Availability\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"monitor.host\",\"size\":1000,\"order\":\"asc\",\"orderBy\":\"1\",\"customLabel\":\"Host Name\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"Agilysis\",\"params\":{\"query\":\"Agilysis\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"Agilysis\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "fcd32dd0-682f-11e8-8c0a-c13124fcada9",
+    "_type": "visualization",
+    "_source": {
+      "title": "LTConnectPie",
+      "visState": "{\"title\":\"LTConnectPie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"monitor.host\",\"customLabel\":\"Status\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"monitor.status\",\"size\":2,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"LTConnect Servers\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"down\":\"#E24D42\",\"up\":\"#7EB26D\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"LTConnect Servers\",\"params\":{\"query\":\"LTConnect Servers\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"LTConnect Servers\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5aa46810-6c69-11e8-9b67-e3c2b16c11e8",
+    "_type": "visualization",
+    "_source": {
+      "title": "AgilysisPie",
+      "visState": "{\"title\":\"AgilysisPie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"monitor.host\",\"customLabel\":\"Status\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"monitor.status\",\"size\":2,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"LTConnect Servers\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"down\":\"#E24D42\",\"up\":\"#7EB26D\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"filter\":[{\"meta\":{\"index\":\"655c50c0-2235-11e8-b95d-052425c74fb9\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"monitor.name\",\"value\":\"Agilysis\",\"params\":{\"query\":\"Agilysis\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"monitor.name\":{\"query\":\"Agilysis\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]

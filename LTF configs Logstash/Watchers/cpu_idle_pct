@@ -39,7 +39,7 @@
                 "aggs": {
                   "metricAgg": {
                     "avg": {
-                      "field": "Hex_service_state"
+                      "field": "system.cpu.idle.pct"
                     }
                   }
                 }
@@ -78,12 +78,6 @@
           "headers": {},
           "body": "watcher_alerting_logentry-alert-cpu_idle_pct-{{ctx.payload}}-scheduled_time-{{ctx.trigger.scheduled_time}}"
         }
-      },
-      "logging_1": {
-        "logging": {
-          "level": "info",
-          "text": "Watch [{{ctx.payload}}] is down"
-        }
       }
     },
     "metadata": {
@@ -102,7 +96,7 @@
         ],
         "time_window_size": 2,
         "threshold": 1,
-        "agg_field": "Hex_service_state"
+        "agg_field": "system.cpu.idle.pct"
       },
       "xpack": {
         "type": "threshold"

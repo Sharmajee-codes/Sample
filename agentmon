@@ -1,0 +1,24 @@
+#!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+pid=`ps -ef | grep -i metricbeat-god | grep -v grep | awk '{print $2}'`
+if [ ! -z $pid ]
+then
+echo "metric running" > /dev/null
+else
+if [ -z $pid ]
+then
+ pkill -9 metricbeat
+ service metricbeat restart > /dev/null
+fi
+fi
+pid=`ps -ef | grep -i filebeat-god | grep -v grep | awk '{print $2}'`
+if [ ! -z $pid ]
+then
+echo "filebeat running" > /dev/null
+else
+if [ -z $pid ]
+then
+ pkill -9 filebeat
+ service filebeat restart > /dev/null
+fi
+fi

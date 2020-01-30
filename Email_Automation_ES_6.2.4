@@ -1,0 +1,95 @@
+##Config Requirements in elasticsearch.yml
+xpack.notification.email.html.sanitization.enabled: false
+xpack.notification.email.account:
+    exchange_account:
+        profile: outlook
+        email_defaults:
+            from: Intelligencegrid@maxlifeinsurance.com
+        smtp:
+            host: 172.23.50.22
+            port: 25
+
+##Sample mailer without an attachment in watcher 
+{
+  "trigger": {
+    "schedule": {
+      "interval": "1h"
+    }
+  },
+  "input": {
+    "none": {}
+  },
+  "condition": {
+    "always": {}
+  },
+  "actions": {
+    "my-logging-action": {
+      "logging": {
+        "level": "info",
+        "text": "This is an error mail with an attachment"
+      }
+    },
+    "email_admin": {
+      "email": {
+        "profile": "outlook",
+        "to": [
+          "ankit.sharma17@maxlifeinsurance.com"
+        ],
+        "subject": "Error Monitoring Report",
+        "body": {
+          "text": "This is an error mail with an attachment"
+        }
+      }
+    }
+  }
+}
+
+
+##Sample mailer with an attachment in watcher 
+{
+  "trigger": {
+    "schedule": {
+      "interval": "1h"
+    }
+  },
+  "input": {
+    "none": {}
+  },
+  "condition": {
+    "always": {}
+  },
+  "actions": {
+    "my-logging-action": {
+      "logging": {
+        "level": "info",
+        "text": "This is an error mail with an attachment"
+      }
+    },
+    "email_admin": {
+      "email": {
+        "profile": "outlook",
+        "attachments": {
+          "error_report.pdf": {
+            "reporting": {
+              "url": "https://57060eb280574750a39b5527f7befbc8.us-east-1.aws.found.io:9243/api/reporting/generate/printablePdf?jobParams=(browserTimezone:Asia%2FCalcutta,layout:(dimensions:(height:1884,width:1169),id:preserve_layout),objectType:dashboard,relativeUrls:!(%27%2Fapp%2Fkibana%23%2Fdashboard%2Fedf84fe0-e1a0-11e7-b6d5-4dc382ef7f5b%3F_g%3D(refreshInterval:(pause:!!f,value:900000),time:(from:now-15m,mode:quick,to:now))%26_a%3D(description:!%27Analyze%2Bmock%2Bweb%2Btraffic%2Blog%2Bdata%2Bfor%2BElastic!!!%27s%2Bwebsite!%27,filters:!!(),fullScreenMode:!!f,options:(darkTheme:!!f,hidePanelTitles:!!f,useMargins:!!t),panels:!!((embeddableConfig:(vis:(colors:(!%27Avg.%2BBytes!%27:%25236ED0E0,!%27Unique%2BVisitors!%27:%25230A437C),legendOpen:!!f)),gridData:(h:13,i:!%272!%27,w:21,x:27,y:11),id:e1d0f010-9ee7-11e7-8711-e7a007dcef99,panelIndex:!%272!%27,type:visualization,version:!%277.0.0-alpha1!%27),(gridData:(h:18,i:!%274!%27,w:24,x:0,y:49),id:!%2706cf9c40-9ee8-11e7-8711-e7a007dcef99!%27,panelIndex:!%274!%27,type:visualization,version:!%277.0.0-alpha1!%27),(embeddableConfig:(vis:(defaultColors:(!%270%2B-%2B22!%27:!%27rgb(247,251,255)!%27,!%2722%2B-%2B44!%27:!%27rgb(208,225,242)!%27,!%2744%2B-%2B66!%27:!%27rgb(148,196,223)!%27,!%2766%2B-%2B88!%27:!%27rgb(74,152,201)!%27,!%2788%2B-%2B110!%27:!%27rgb(23,100,171)!%27),legendOpen:!!f)),gridData:(h:13,i:!%277!%27,w:24,x:0,y:36),id:!%27935afa20-e0cd-11e7-9d07-1398ccfcefa3!%27,panelIndex:!%277!%27,type:visualization,version:!%276.3.0!%27),(embeddableConfig:(mapCenter:!!(36.8092847020594,-96.94335937500001),vis:(params:(sort:(columnIndex:!!n,direction:!!n)))),gridData:(h:12,i:!%279!%27,w:21,x:27,y:24),id:!%274eb6e500-e1c7-11e7-b6d5-4dc382ef7f5b!%27,panelIndex:!%279!%27,type:visualization,version:!%276.3.0!%27),(embeddableConfig:(vis:(colors:(!%270%2B-%2B500!%27:%2523BF1B00,!%271000%2B-%2B1500!%27:%25237EB26D,!%27500%2B-%2B1000!%27:%2523F2C96D),defaultColors:(!%270%2B-%2B500!%27:!%27rgb(165,0,38)!%27,!%271000%2B-%2B1500!%27:!%27rgb(0,104,55)!%27,!%27500%2B-%2B1000!%27:!%27rgb(255,255,190)!%27),legendOpen:!!f)),gridData:(h:11,i:!%2711!%27,w:9,x:10,y:0),id:!%2769a34b00-9ee8-11e7-8711-e7a007dcef99!%27,panelIndex:!%2711!%27,title:!%27!%27,type:visualization,version:!%276.3.0!%27),(gridData:(h:12,i:!%2713!%27,w:27,x:0,y:24),id:!%2742b997f0-0c26-11e8-b0ec-3bb475f6b6ff!%27,panelIndex:!%2713!%27,type:visualization,version:!%276.3.0!%27),(gridData:(h:31,i:!%2714!%27,w:24,x:24,y:36),id:!%277cbd2350-2223-11e8-b802-5bcf64c2cfb4!%27,panelIndex:!%2714!%27,type:visualization,version:!%276.3.0!%27),(gridData:(h:13,i:!%2715!%27,w:27,x:0,y:11),id:!%27314c6f60-2224-11e8-b802-5bcf64c2cfb4!%27,panelIndex:!%2715!%27,type:visualization,version:!%276.3.0!%27),(gridData:(h:11,i:!%2716!%27,w:15,x:19,y:0),id:!%2724a3e970-4257-11e8-b3aa-73fdaf54bfc9!%27,panelIndex:!%2716!%27,title:!%27!%27,type:visualization,version:!%276.3.0!%27),(embeddableConfig:(vis:(legendOpen:!!f)),gridData:(h:11,i:!%2717!%27,w:14,x:34,y:0),id:!%2714e2e710-4258-11e8-b3aa-73fdaf54bfc9!%27,panelIndex:!%2717!%27,type:visualization,version:!%276.3.0!%27),(embeddableConfig:(),gridData:(h:11,i:!%2718!%27,w:10,x:0,y:0),id:!%2747f2c680-a6e3-11e8-94b4-c30c0228351b!%27,panelIndex:!%2718!%27,title:!%27!%27,type:visualization,version:!%277.0.0-alpha1!%27)),query:(language:lucene,query:!%27!%27),timeRestore:!!t,title:!%27%255BLogs%255D%2BWeb%2BTraffic!%27,viewMode:view)%27),title:%27%5BLogs%5D%20Web%20Traffic%27)",
+              "retries": 2,
+              "auth": {
+                "basic": {
+                  "username": "elastic",
+                  "password": "Password"
+                }
+              }
+            }
+          }
+        },
+        "to": [
+          "ankit.sharma17@maxlifeinsurance.com"
+        ],
+        "subject": "Error Monitoring Report",
+        "body": {
+          "text": "This is an error mail with an attachment"
+        }
+      }
+    }
+  }
+}
